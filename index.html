@@ -2,13 +2,14 @@
 <html lang="en-us">
 
 <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">        <!-- makes sure site renders as expected and efficiently-->
+        <title>Farmhouse Goodies</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />   <!--2.3.1 from cdnjs.com -->
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-        <meta name="viewport" content="width=device-width, initial-scale-1">        <!-- makes sure site renders as expected and efficiently-->
-        <meta charset="utf-8">
-        <title>Farmhouse Goodies</title>
+        
     
 </head>
 
@@ -32,7 +33,7 @@
           
                       <!-- message -->
             <div class="navbar-header navbar-right hidden-xs">      <!-- moves this section to right of navbar. hidden-xs hides btn+txt for mobile-->
-                <a href="/login" class="btn btn-default navbar-btn">Log In</a>
+                <a href="/login" class="btn btn-default navbar-btn" data-toggle='modal' data-target='#LogInModal'>Log In</a>
                 <p class="navbar-text"><i></i>Organic produce for your palate</p>   <!-- marketing text -->
             </div>
         </div>
@@ -44,7 +45,9 @@
                 <section class="callout jumbotron text-center">     <!-- jumbotron highlights the callout -->
                     <h1>The Freshest Farmhouse Food</h1>
                     <p class="lead">Voted Best Irish Organic Food Producer 2017</p>
-                    <p><button class="btn btn-lg btn-success">Join Us</button></p>
+                    <p><button class="btn btn-lg btn-success" data-toggle='modal' data-target='#joinUsModal'>Join Us</button></p>
+                    <!-- data-toggle='modal' (button is trigger for modal)-->
+                    <!-- data-target='#joinUsModal (which modal is involved-->
                     <p class="text-muted"> <small>Certified by Bia an Bord na hEireann</small></p>  <!--small and faded text -->
                 </section>
             </div>
@@ -133,6 +136,111 @@
         </section>
         <!-- features -->
     </article>
+    
+    <!--   join Us Modal  -->
+    
+            <!-- Modal ..within body tag but outside other elements -->
+            <!-- Modal dialogue captures entire screen so needs to be top level element -->
+    <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <!-- joinUsModal...unique ID for linking to join us button line48-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">             <!-- island of content in middle of page-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Join Us Today</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="address" class="form-control" id="address" placeholder="Address">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">***We won't pass your details to 3rd parties***</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Create Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Create Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I agree to terms and conditions
+                            </label>
+                        </div>
+                        
+                        
+                        
+                        <button type="submit" class="btn btn-success">Join Us</button>
+                                                            <!-- success is color -->
+                    </form>
+                    
+                    
+                </div>                          <!--has header, content and footer linke any other page(by default)-->
+            </div>
+        </div>
+    </div>
+    
+    <!-- ----login modaL----line 36 -->
+    <div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <!-- LogInModal...unique ID for linking to join us button line48-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">             <!-- island of content in middle of page-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Log In</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Password">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I agree to terms and conditions
+                            </label>
+                        </div>
+                        
+                        
+                        
+                        <button type="submit" class="btn btn-success">Log In</button>
+                                                            <!-- success is color -->
+                    </form>
+                    
+                    
+                </div>                          <!--has header, content and footer linke any other page(by default)-->
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!--js library at the bottom so it loads after all the html...and css rules have loaded first-->
+    <!-- possible problem with jquery...wouldnt load until i changed to https: also he uses version 3.2.1.min.js-->
+    <!-- is important that code.jquery.com minimised link is above bootstrap link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <!-- bootstrapcdn below is found on getting started page of bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
