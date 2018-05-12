@@ -1,1 +1,105 @@
+body {
+    font-family: 'Crimson Text', sans serif;
+}
 
+  /* containers */
+  
+  .callout-container {
+      height: 100vh;            /* vertical height...entire height of browser window */
+      
+      
+      /*    https://css-tricks.com/perfect-full-page-background-image/       */
+      background: url(../assets/images/Hinton_Farmhouse.jpg) no-repeat center center fixed;  
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      
+      display: flex;            /* problem here causes jumbotron not to c0ver full width of page on desktop */
+      align-items: center;
+      
+      position: relative;
+  }
+  
+  .opaque-overlay {                /* covers the page ..deadens the brightness..possibly get rid of it */
+      position: absolute;            
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .quotes-container {
+      
+  }
+  
+  .features-container {
+      
+  }
+  
+  
+    /*  Jumbotron */
+    
+.jumbotron {
+    background-color:  transparent;
+}
+
+.jumbotron h1 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    color: white;
+    margin: 25px 0;
+}
+
+.jumbotron small {
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+}
+
+
+
+/* block dividers  */
+
+.block-divider {                        /* looks a bit shit...line 51 in html */
+    width: 61px;
+    height: 11px;
+    border: 0;
+}
+
+.block-divider--black {
+    background-color: black;
+}
+
+.block-divider--short {
+    width: 61px;
+}
+
+
+    /* buttons */
+    
+.btn--cta {
+   font-weight: bold;
+   border-radius: 23px;
+   width: 160px;
+}
+
+.btn--blue {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
+
+.btn--blue:hover,                /* pseudo elements...hover states */
+.btn--blue:active,
+.btn--blue:focus,
+.btn--blue:active:focus {
+    background-color: green;
+    border-color: green;
+    color: white;
+}

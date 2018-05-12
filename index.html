@@ -2,13 +2,14 @@
 <html lang="en-us">
 
 <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale-1.0">        <!-- makes sure site renders as expected and efficiently-->
-        <title>Farmhouse Goodies</title>
+        <title>Farmhouse Goodies</title>  <!-- the order for stylesheets ...bootstrap, google fonts, then our css style sheet -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />   <!--2.3.1 from cdnjs.com -->
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i" rel="stylesheet">   <!-- google fonts -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
         
     
 </head>
@@ -38,14 +39,18 @@
             </div>
         </div>
     </nav>
-    <article class="container">
+    
+    
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
         <!-- Callout -->
         <div class="row">                       <!-- breaking page into sections-->
             <div class="col-xs-12">                 <!-- xs-12 single column for mobile devices -->
                 <section class="callout jumbotron text-center">     <!-- jumbotron highlights the callout -->
                     <h1>The Freshest Farmhouse Food</h1>
+                    <hr class="block-divider block-divider--black">         <!--  looks a bit shit..possibly get rid -->
                     <p class="lead">Voted Best Irish Organic Food Producer 2017</p>
-                    <p><button class="btn btn-lg btn-success" data-toggle='modal' data-target='#joinUsModal'>Join Us</button></p>
+                    <p><button class="btn btn-lg btn--cta btn--blue" data-toggle='modal' data-target='#joinUsModal'>Join Us</button></p>
                     <!-- data-toggle='modal' (button is trigger for modal)-->
                     <!-- data-target='#joinUsModal (which modal is involved-->
                     <p class="text-muted"> <small>Certified by Bia an Bord na hEireann</small></p>  <!--small and faded text -->
@@ -53,8 +58,10 @@
             </div>
         </div>
         <!-- /.callout -->
+    </div>
         
-
+    
+    <div class="container quotes-container">
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">                                            <!-- row around quotes header -->
@@ -95,8 +102,9 @@
             </div>                                                                  <!-- row around quotes -->
         </section>
         <!-- /.quotes -->
-        
+    </div>     
 
+    <div class="container features-container">              <!-- div.container.features-container -->
         <!-- Features -->
         <section class="features">
             <div class="row">                                                   <!-- row around features header-->
@@ -109,7 +117,7 @@
             <div class="row">                                                   <!-- row àround features -->
                 <div class="col-xs-12 col-md-4 col-lg-4">                 <!-- xs-12 single column for mobile devices -->
                     <div class="feature">
-                        <h3><About us</h3>      <!--span class="glyphicon glyphicon=-gift hidden-xs"></span>(example of glyphicon for <h3>)-->
+                        <h3>About us</h3>      <!--span class="glyphicon glyphicon=-gift hidden-xs"></span>(example of glyphicon for <h3>)-->
                         <p>We are a family run business that started out in 2003. We are located just outside the town of Athboy in the heart of County Meath. The farm is run by the son of the house Jeremy and his wife Denise. The shop is run by our lovely daughter Helga and her husband Olef. My wife Jean and I (Dominic) run the online side of the business and deal directly with You, our online customers. </p>
                         <p><a class="btn btn-sm btn-default" href="">Continue Reading</a></p>
                     </div>
@@ -135,7 +143,8 @@
             </div>                                                              <!-- row around features -->
         </section>
         <!-- features -->
-    </article>
+    </div>
+     
     
     <!--   join Us Modal  -->
     
@@ -191,7 +200,7 @@
         </div>
     </div>
     
-    <!-- ----login modaL----line 36 -->
+    <!-- ----login modaL----line 36  (discussed in bootstrap ur next big idea-components) -->
     <div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <!-- LogInModal...unique ID for linking to join us button line48-->
         <div class="modal-dialog" role="document">
@@ -205,16 +214,13 @@
                         
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <input type="email" class="form-control" id="Email" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="Password" placeholder="Password">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
                         </div>
-                        <div class="form-group">
-                            <label for="passwordRepeat">Repeat Password</label>
-                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Password">
-                        </div>
+                        
                         <div class="checkbox">
                             <label>
                               <input type="checkbox"> I agree to terms and conditions
