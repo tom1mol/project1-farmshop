@@ -36,7 +36,8 @@
             <div class="navbar-collapse collapse" id="navbar">     <!--dropdown burger -->     
                 <ul class="nav navbar-nav">                             <!-- menu with 2 `navigation links -->
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="hidden-sm hidden-md">About</a></li>
                     <li class="visible-xs"><a href="/login" class="btn btn-default navbar-btn" data-toggle='modal' data-target='#LogInModal'>Log In</a></li>
                 </ul>
               
@@ -55,7 +56,7 @@
         <!-- Callout -->
         <div class="row">                       <!-- breaking page into sections-->
             <div class="col-xs-12">                 <!-- xs-12 single column for mobile devices -->
-                <section class="callout jumbotron text-center">     <!-- jumbotron highlights the callout -->
+                <section class="callout jumbotron text-center" id="index-jumbotron">     <!-- jumbotron highlights the callout -->
                     <h1>The Freshest Farmhouse Food</h1>
                     <hr class="block-divider block-divider--black">         <!--  looks a bit shit..possibly get rid -->
                     <p class="lead">Voted Best Irish Organic Food Producer 2017</p>
@@ -70,7 +71,7 @@
     </div>
         
     
-    <div class="container quotes-container">
+    <div class="container-fluid quotes-container">
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">                                            <!-- row around quotes header -->
@@ -82,7 +83,7 @@
             </div>                                                       <!-- row around quotes header-->
             <div class="row">                                                        <!-- row around quotes-->
                 <div class="col-xs-12 col-md-6">                 <!-- xs-12 single column for mobile devices md-6 for medium devices-->
-                    <div class="media">
+                    <div class="media quotes-row">
                         <div class="media-left">        <!-- can put hidden-xs in here to hide images on mobile -->
                             <img src="assets/images/lady-1.jpg" class="img-thumbnail media-object"  height=100 width=100> <!--thumb rather than circle-->
                         </div>

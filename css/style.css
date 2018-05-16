@@ -31,7 +31,26 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.quotes-container {}
+/*   quotes */
+
+
+.quotes-container {
+    background-color: green;
+}
+
+.quotes-row {
+    background-color: green;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 0px;
+    font-size: 17.5px;
+    border-left: 0px;     /* got rid of line down side */
+}
+
+
+
 
 .features-container {}
 
@@ -71,9 +90,11 @@ body {
     font-size: 21px;
 }
 
+
 .navbar-default .navbar-text {        /* copied in from inspect element>> organic produce for ur palate*/
     color: greenyellow;
     font-weight: bold;
+    
 }
 
 .navbar-btn {
@@ -128,9 +149,14 @@ body {
 .btn-default:hover {                    /* login button  */
     background-color: #32d416;
 }
-.btn .btn-default .navbar-btn {
+.navbar-btn {
     margin-left: 0;
+    background-color: green;
 }
+
+
+
+
 
 /*  Jumbotron */
 
@@ -139,9 +165,11 @@ body {
 }
 
 .jumbotron h1 {
-    color: black;
+    color: blue;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 70px;
 }
 
 .jumbotron .lead {
@@ -161,6 +189,47 @@ body {
     font-weight: 200;
     color: white;
 }
+/*
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+    padding-top: 158px;
+}
+*/
+
+#index-jumbotron {
+    padding-right: 20px;
+    padding-left: 16px;
+    padding-top: 17px;
+    padding-bottom: 0px;
+}
+
+#about-jumbotron {
+    padding-right: 20px;
+    padding-left: 16px;
+    padding-top: 166px;
+    padding-bottom: 0px;
+}
+
+#products-jumbotron {
+    padding-right: 20px;
+    padding-left: 16px;
+    padding-top: 166px;
+    padding-bottom: 45px;
+    
+}
+
+
+.list-group-item {
+    background-color: transparent;            /* makes product jumbotron transparent */
+    color: white;
+    border: 0;
+    font-size: 23px;
+}
+
+
+
 
 
 /* block dividers  */
@@ -179,6 +248,10 @@ body {
 .block-divider--short {
     width: 61px;
 }
+
+
+
+
 
 
 /* buttons */
@@ -206,6 +279,13 @@ body {
     color: white;
 }
 
+
+
+
+
+/*    Media  */
+
+
 @media (min-width: 768px) {
 .navbar-nav>li>a  {
     padding-top: 24px;
@@ -221,6 +301,7 @@ body {
 }
 }
 
+/*
 @media (min-width: 768px) { 
 .navbar-default .navbar-text {
     color: greenyellow;
@@ -231,11 +312,13 @@ body {
 }
 }
 
+*/
+
 @media (min-width: 992px) { 
 .navbar-default .navbar-text {
     color: greenyellow;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     padding-right: 15px;
     
 }
@@ -259,7 +342,7 @@ body {
     font-size: 17px;
 }
 }
-
+/*
 @media (min-width: 992px)  {
 .navbar-default .navbar-nav>li>a {
     color: blue;
@@ -268,5 +351,74 @@ body {
     margin-right: 100%;
     border: 0;
     font-size: 17px;
+}
+}
+*/
+@media (min-width: 992px) {
+.navbar-default .navbar-nav>li>a {
+    color: blue;
+    font-weight: bold;
+    background-color: transparent;
+    margin-right: 74%;
+    border: 0;
+    font-size: 26px;
+    margin-top: -4px;
+    margin-left: 44px;
+}
+}
+
+/*
+@media screen and (min-width: 768px) {
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 105px;
+    padding-left: 54px;
+    padding-top: 0px;
+}
+}
+*/
+
+@media (min-width: 992px) {
+#about-jumbotron {
+    padding-right: 313px;
+    padding-left: 90px;
+    padding-top: 166px;
+}
+}
+
+@media (min-width: 600px) {
+#products-jumbotron {
+    padding-right: 115px;
+    padding-left: 0px;
+    padding-top: 166px;
+    padding-bottom: 144px;
+}
+}
+
+
+@media (min-width: 992px) {
+#products-jumbotron {
+    padding-right: 115px;
+    padding-left: 300px;
+    padding-top: 166px;
+}
+}
+
+@media (min-width: 668px) {
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 0px;
+    font-size: 23.5px;
+    border-left: 0px;     /* got rid of line down side */
+}
+}    
+
+
+@media (min-width: 768px) {
+.jumbotron h1 {
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 209px;
 }
 }
