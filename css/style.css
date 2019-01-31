@@ -8,7 +8,7 @@ body {
     height: 100vh;
     /* vertical height...entire height of browser window */
     /*    https://css-tricks.com/perfect-full-page-background-image/       */
-    background: url(../assets/images/Hinton_Farmhouse.jpg) no-repeat center center fixed;
+    background: url(../assets/images/2014_Yamaha_YZF-R1.JPG) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -82,7 +82,7 @@ blockquote {
 
 .navbar-default .navbar-nav>li>a {
     /* copied in from inspect element > About and Home */
-    color: blue;
+    color: #00ff06;
     font-weight: bold;
     background-color: transparent;                    /* makes bg-color for login transparent */
     margin-right: 100%;        /* pushed login on mobile to far left... also stopped whole width of screen being clickable */
@@ -215,8 +215,8 @@ blockquote {
 #products-jumbotron {
     padding-right: 20px;
     padding-left: 16px;
-    padding-top: 166px;
-    padding-bottom: 45px;
+    padding-top: 156px;
+    padding-bottom: 40px;
     
 }
 
@@ -334,7 +334,7 @@ blockquote {
 
 @media (min-width: 768px)  {
 .navbar-default .navbar-nav>li>a {
-    color: blue;
+    color: #00ff06;
     font-weight: bold;
     background-color: transparent;
     margin-right: 100%;
@@ -356,7 +356,7 @@ blockquote {
 */
 @media (min-width: 992px) {
 .navbar-default .navbar-nav>li>a {
-    color: blue;
+    color: #00ff06;
     font-weight: bold;
     background-color: transparent;
     margin-right: 74%;
@@ -388,7 +388,7 @@ blockquote {
 @media (min-width: 600px) {
 #products-jumbotron {
     padding-right: 115px;
-    padding-left: 0px;
+    padding-left: 20px;
     padding-top: 166px;
     padding-bottom: 144px;
 }
