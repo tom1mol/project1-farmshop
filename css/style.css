@@ -52,7 +52,7 @@ blockquote {
 
 
 
-.features-container {}
+/*  .features-container {}            */
 
 
 /*     navbar  */
@@ -199,25 +199,29 @@ blockquote {
 */
 
 #index-jumbotron {
-    padding-right: 20px;
-    padding-left: 300px;
-    padding-top: 17px;
-    padding-bottom: 0px;
+    padding: 17px 20px 0px 300px;
+    
 }
 
 #about-jumbotron {
-    padding-right: 20px;
+    padding:166px 20px 0px 16px
+   
+ /*   
+    padding-right: 20px
     padding-left: 16px;
     padding-top: 166px;
     padding-bottom: 0px;
+    */
 }
 
 #products-jumbotron {
+    padding: 156px 20px 40px 16px;
+    /*
     padding-right: 20px;
     padding-left: 16px;
     padding-top: 156px;
     padding-bottom: 40px;
-    
+    */
 }
 
 
@@ -387,10 +391,13 @@ blockquote {
 
 @media (min-width: 600px) {
 #products-jumbotron {
+    padding: 166px 115px 144px 20px; 
+    /*
     padding-right: 115px;
     padding-left: 20px;
     padding-top: 166px;
     padding-bottom: 144px;
+    */
 }
 }
 
@@ -398,7 +405,7 @@ blockquote {
 @media (min-width: 992px) {
 #products-jumbotron {
     padding-right: 115px;
-    padding-left: 300px;
+    padding-left: 334px;
     padding-top: 166px;
 }
 }
