@@ -1,7 +1,7 @@
 I was asked to create a website with a number of pages.
 I was given a choice of creating a website for a fictitious band or else creating
 my own website with my own idea. I chose the latter and I created a website for 
-a Farm Shop. 
+a Motorbike Shop. 
 
 I went over my notes on User Experience Design(UXD) and I looked at the 5 planes 
 of UXD and how I could apply them to my project. 
